@@ -8,11 +8,11 @@ import { ProductModule } from './product/product.module';
 @Module({
   imports: [TypeOrmModule.forRoot({
     type: 'postgres',
-    host: 'localhost',
+    host: 'ec2-34-200-205-45.compute-1.amazonaws.com',
     port: 5432,
-    username: 'postgres',
-    password: '012522123',
-    database: 'postgres',
+    username: 'zxlspxluvruyue',
+    password: '8ea7846f1a1a21d9532170d0aa829811ea222b1b48ce653226a9c8a1a0bbca4e',
+    database: 'dc1a9pb6q4h97k',
     entities: [],
     autoLoadEntities: true,
     synchronize: true,
