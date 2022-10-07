@@ -16,6 +16,9 @@ import { ProductModule } from './product/product.module';
     entities: [],
     autoLoadEntities: true,
     synchronize: true,
+    ssl: {
+      rejectUnauthorized: false,
+  },
     logging:true,
   }), CategoryModule, ProductModule],
   controllers: [AppController],
