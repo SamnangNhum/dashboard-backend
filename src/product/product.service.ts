@@ -9,10 +9,10 @@ export class ProductService {
 
     constructor(@InjectRepository(Product) private productRepository: Repository<Product>){
     }
-    findAllProduct(): void{
-        this.productRepository.find();
+    findAllProduct(): Promise<Product[]> {
+        return this.productRepository.find();
     }
-    insertProduct(data):void{
-            this.productRepository.insert(data)
+    insertProduct(data) {
+          return  this.productRepository.insert(data)
     }
 }
