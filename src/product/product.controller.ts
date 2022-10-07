@@ -8,7 +8,7 @@ export class ProductController {
 
     @Get()
     findAllProduct(){
-        this.productService.findAllProduct();
+        return this.productService.findAllProduct();
     }
 
     @Post()
