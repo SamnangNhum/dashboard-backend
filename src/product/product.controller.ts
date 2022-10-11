@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post, UploadedFile, UseInterceptors , ParseFi } from '@nestjs/common';
+import { Body, Controller, Get, Post, UploadedFile, UseInterceptors , ParseFilePipe, MaxFileSizeValidator, FileTypeValidator } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { productDto } from 'src/dto/product.dto';
 import { ProductService } from './product.service';
@@ -6,8 +6,9 @@ import { diskStorage } from 'multer';
 import { extname } from 'path'
 
 @Controller('product')
-export class ProductController {
+export class ProductController{
     constructor(private productService: ProductService){}
+
 
     @Get()
     findAllProduct(){
@@ -34,7 +35,10 @@ export class ProductController {
         
     }) )
     uploadThumbnail(@UploadedFile(new ParseFilePipe({
-    
+      validators: [
+        new MaxFileSizeValidator({ maxSize: 10000 }),
+        new FileTypeValidator({ fileType: 'jpg' }),
+      ],
       }),) file: Express.Multer.File) {
         return 'upload successfully uploaded';
        }
