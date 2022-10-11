@@ -1,0 +1,56 @@
+Last login: Sun Nov 14 10:01:33 on console
+/Users/vireakvibol/.zshrc:8: module_init: function definition file not found
+vireakvibol@Vireaks-Mini ~ % $HOME/.zshrc
+zsh: permission denied: /Users/vireakvibol/.zshrc
+vireakvibol@Vireaks-Mini ~ % sudo $HOME/ .zshrc
+Password:
+sudo: /Users/vireakvibol/: command not found
+vireakvibol@Vireaks-Mini ~ % ls                
+Applications		Movies			node_modules
+Creative Cloud Files	Music			package-lock.json
+Desktop			PIXZEL			package.json
+Documents		Pictures		yarn-error.log
+Downloads		Public			yarn.lock
+Library			index.html
+vireakvibol@Vireaks-Mini ~ % defaults write com.apple.Finder AppleShowAllFiles true
+vireakvibol@Vireaks-Mini ~ % defaults write com.apple.Finder AppleShowAllFiles true killall Finder
+2021-11-14 11:34:23.641 defaults[9140:94853] Unexpected argument killall; leaving defaults unchanged.
+vireakvibol@Vireaks-Mini ~ % flutter doctor                                    
+zsh: command not found: flutter
+vireakvibol@Vireaks-Mini ~ % flutter
+zsh: command not found: flutter
+vireakvibol@Vireaks-Mini ~ % cd .zshrc
+cd: not a directory: .zshrc
+vireakvibol@Vireaks-Mini ~ % ls
+Applications		Movies			node_modules
+Creative Cloud Files	Music			package-lock.json
+Desktop			PIXZEL			package.json
+Documents		Pictures		yarn-error.log
+Downloads		Public			yarn.lock
+Library			index.html
+vireakvibol@Vireaks-Mini ~ % vim ~/.zhrc
+
+export PATH="$PATH:Users/vireakvibol/Desktop/Development/Tools/bin"
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+ 
