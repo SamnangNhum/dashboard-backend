@@ -10,8 +10,8 @@ export class UsersController {
     }
 
     @Post()
-    insertProduct(@Body() users: userDto){
-       this.usersService.insertProduct(users);
+    insertUsers(@Body() users: userDto){
+       this.usersService.insertUsers(users);
         
     }
 
